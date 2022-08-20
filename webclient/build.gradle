@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'java-library'
+}
+
+group 'com.trisestar'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.1.3'
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:2.7.2'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.7.3'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client:2.7.3'
+
+
+
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+}
