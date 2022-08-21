@@ -1,0 +1,13 @@
+server:
+  port: 1002
+spring:
+  application:
+    name: security-application
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 165714238373-37m3q7t7c2h9b7ddqge5e3hd2p4bfuut.apps.googleusercontent.com
+            client-secret: 0ckRTxY-1o0PS07Wh0L2Mols
+            redirect-uri: http://localhost:1002/login/oauth2/code/google

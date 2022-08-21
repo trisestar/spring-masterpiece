@@ -1,2 +1,6 @@
 rootProject.name = 'spring-masterpiece'
+include 'webclient'
+include 'eureka-server'
+include 'security'
+include 'spring-data'
 

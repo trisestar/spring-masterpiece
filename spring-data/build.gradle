@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'com.trisestar'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa:2.7.3'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux:2.7.2'
+    implementation 'org.postgresql:postgresql:42.4.2'
+
+}
+
+test {
+    useJUnitPlatform()
+}
