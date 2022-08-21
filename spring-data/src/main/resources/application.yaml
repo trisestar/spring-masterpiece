@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: data-application
+  datasource:
+    url: jdbc:postgresql://localhost:5432/zxc
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 1004
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/

@@ -1,49 +1,46 @@
 package com.trisestar.webclient.model;
 
 public class RequestModel {
-    public RequestModel() {
-    }
-
-    public RequestModel(Object body, String uri, String method) {
-        this.body = body;
-        this.uri = uri;
-        this.method = method;
-    }
-
     private Object body;
     private String uri;
     private String method;
+    private boolean internal;
+    public RequestModel() {
+    }
 
     public Object getBody() {
         return body;
     }
 
-    public void setBody(Object body) {
+    public RequestModel withBody(Object body) {
         this.body = body;
+        return this;
     }
 
     public String getUri() {
         return uri;
     }
 
-    public void setUri(String uri) {
+    public RequestModel withUri(String uri) {
         this.uri = uri;
+        return this;
     }
 
     public String getMethod() {
         return method;
     }
 
-    public void setMethod(String method) {
+    public RequestModel withMethod(String method) {
         this.method = method;
+        return this;
     }
 
-    @Override
-    public String toString() {
-        return "RequestModel{" +
-                "body=" + body +
-                ", uri='" + uri + '\'' +
-                ", method='" + method + '\'' +
-                '}';
+    public boolean isInternal() {
+        return internal;
+    }
+
+    public RequestModel internal(boolean internal) {
+        internal = internal;
+        return this;
     }
 }
